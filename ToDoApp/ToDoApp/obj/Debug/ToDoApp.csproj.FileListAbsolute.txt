@@ -1,1 +1,13 @@
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe.config
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\bin\Debug\ToDoApp.pdb
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csprojResolveAssemblyReference.cache
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\MainWindow.baml
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\MainWindow.g.cs
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\App.g.cs
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp_MarkupCompile.cache
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.g.resources
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.Properties.Resources.resources
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.GenerateResource.Cache
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.exe
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp.pdb
