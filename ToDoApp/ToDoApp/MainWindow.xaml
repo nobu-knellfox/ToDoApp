@@ -10,6 +10,9 @@
             <ColumnDefinition Width="25*"/>
         </Grid.ColumnDefinitions>
         <Button Content="タスク追加" HorizontalAlignment="Left" Margin="56,48,0,0" VerticalAlignment="Top" Width="114" Height="69" Click="Button_Click"/>
+        <Canvas Grid.Column="1" HorizontalAlignment="Left" Height="361" VerticalAlignment="Top" Width="258">
+            <Button Content="Button" Canvas.Left="37" Canvas.Top="32" Width="75"/>
+        </Canvas>
 
     </Grid>
 </Window>
