@@ -1,0 +1,14 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="CustomCalender.UserControl1"
+	x:Name="UserControl"
+	d:DesignWidth="414.232" d:DesignHeight="148.128">
+
+	<Grid x:Name="LayoutRoot">
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148.128" Stroke="Black" VerticalAlignment="Top" Width="414.232" RadiusX="128" RadiusY="112"/>
+	</Grid>
+</UserControl>

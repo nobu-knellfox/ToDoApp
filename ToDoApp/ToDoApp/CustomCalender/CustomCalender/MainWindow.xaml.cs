@@ -13,8 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace ToDoApp
+namespace CustomCalender
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
@@ -24,17 +23,6 @@ namespace ToDoApp
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = new Button();
-
-            //Task task = new Task();
-
-            //canvas.Children.Add(button);
-
-           // canvas.Children.Add(task);
         }
     }
 }

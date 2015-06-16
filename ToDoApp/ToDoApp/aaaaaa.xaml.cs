@@ -13,28 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace ToDoApp
 {
     /// <summary>
-    /// MainWindow.xaml の相互作用ロジック
+    /// aaaaaa.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class aaaaaa : UserControl
     {
-        public MainWindow()
+        public aaaaaa()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = new Button();
-
-            //Task task = new Task();
-
-            //canvas.Children.Add(button);
-
-           // canvas.Children.Add(task);
         }
     }
 }

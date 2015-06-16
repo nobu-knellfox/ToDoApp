@@ -1,0 +1,10 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CustomCalender" x:Class="CustomCalender.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+	<Grid Background="Black">
+		<local:UserControl1 Margin="44.502,74.936,58.266,96.936"/>
+        
+	</Grid>
+</Window>
