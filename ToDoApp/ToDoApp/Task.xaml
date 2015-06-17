@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ToDoApp.Task"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="130" d:DesignWidth="362">
+    <Grid Height="186" VerticalAlignment="Top" Margin="0,0,-36.667,-56">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button VerticalAlignment="Top" Height="186" Background="#FF94E2FF" Margin="0,0,-22.666,0"/>
+        <Label Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="7,3,164,88" FontSize="21.333"/>
+        <StackPanel Orientation="Horizontal" Height="43" VerticalAlignment="Top" Margin="0.667,144,0,-1">
+            <Rectangle Fill="#FF0E0E81" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Fill="#FF492B99" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Fill="#FFBA39E0" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+        </StackPanel>
+        <Label Content="残り　2週間" RenderTransformOrigin="0.585,0.536" Margin="0,60.8,10,19.2" FontSize="20" Background="#0021AA3A" HorizontalAlignment="Right" Width="191"/>
+        <Image Source="005.jpg" HorizontalAlignment="Left" Height="88" Margin="7,42,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</UserControl>

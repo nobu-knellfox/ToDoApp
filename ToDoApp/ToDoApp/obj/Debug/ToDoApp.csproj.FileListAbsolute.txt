@@ -32,3 +32,9 @@ D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Debu
 D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Debug\Test3.g.cs
 D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Debug\aaaaaa.baml
 D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Debug\aaaaaa.g.cs
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\Test3.baml
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\Test3.g.cs
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\ToDoApp_MarkupCompile.lref
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\Task.baml
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\Task.g.cs
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Debug\GeneratedInternalTypeHelper.g.cs

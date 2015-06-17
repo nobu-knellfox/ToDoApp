@@ -4,33 +4,32 @@
         xmlns:local="clr-namespace:ToDoApp" x:Class="ToDoApp.MainWindow"
         Title="MainWindow" Height="500.667" Width="888">
     <Grid Background="#FF1D0146">
-    	<Grid.RowDefinitions>
-    		<RowDefinition/>
-    	</Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Calendar HorizontalAlignment="Left" Margin="0,299.37,0,-0.001" VerticalAlignment="Top" Width="403.492" Foreground="#FF190000" Height="171.298">
-        	<Calendar.BorderBrush>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="#FF24002E" Offset="0"/>
-        			<GradientStop Color="#FF120013" Offset="1"/>
-        		</LinearGradientBrush>
-        	</Calendar.BorderBrush>
-        	<Calendar.Background>
-        		<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-        			<GradientStop Color="#FF3D0040" Offset="0"/>
-        			<GradientStop Color="#FF28002C" Offset="1"/>
-        		</LinearGradientBrush>
-        	</Calendar.Background>
+            <Calendar.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF24002E" Offset="0"/>
+                    <GradientStop Color="#FF120013" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.BorderBrush>
+            <Calendar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3D0040" Offset="0"/>
+                    <GradientStop Color="#FF28002C" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.Background>
         </Calendar>
         <UniformGrid Columns="2" Margin="0,0.001,10,-0.001">
-        	<TextBlock TextWrapping="Wrap" Height="71" Foreground="White" FontFamily="Meiryo" Background="#FF0E031F" FontSize="18.667" Margin="0,0,-2,0" VerticalAlignment="Top"><Run Text="光の記憶"/><LineBreak/><Run Text="新たな世界"/></TextBlock>
-        	<UniformGrid Height="470.667" VerticalAlignment="Top" Rows="5">
-        		<Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center"/>
-        		<Button Content="Button" BorderThickness="18,0,0,0" Padding="1" Background="#FF140034" Foreground="White" BorderBrush="White" FontSize="21.333"/>
-        		<Button Content="Button" BorderThickness="0" Background="#FF140034" Foreground="White" BorderBrush="White" FontSize="21.333"/>
-        	</UniformGrid>
+            <TextBlock TextWrapping="Wrap" Height="71" Foreground="White" FontFamily="Meiryo" Background="#FF0E031F" FontSize="18.667" Margin="0,0,-2,0" VerticalAlignment="Top"><Run Text="光の記憶"/><LineBreak/><Run Text="新たな世界"/></TextBlock>
+            <UniformGrid Height="470.667" VerticalAlignment="Top" Rows="4" Margin="-2,0,2,0">
+                <Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center"/>
+                <local:Task/>
+            </UniformGrid>
         </UniformGrid>
 
     </Grid>

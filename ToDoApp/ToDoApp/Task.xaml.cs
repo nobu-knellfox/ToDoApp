@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace ToDoApp
 {
     /// <summary>
-    /// UserControl2.xaml の相互作用ロジック
+    /// Task.xaml の相互作用ロジック
     /// </summary>
-    public partial class UserControl2 : UserControl
+    public partial class Task : UserControl
     {
-        public UserControl2()
+        public Task()
         {
             InitializeComponent();
+        }
+
+        private void Label_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
         }
     }
 }
