@@ -21,6 +21,6 @@
             <Rectangle Name="p4" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
         </StackPanel>
         <Label Content="残り　2週間" RenderTransformOrigin="0.585,0.536" Margin="0,93,10,56" FontSize="20" Background="#0021AA3A" HorizontalAlignment="Right" Width="125"/>
-        <Image Source="005.jpg" HorizontalAlignment="Left" Height="88" Margin="7,42,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image Source="img\005.jpg" HorizontalAlignment="Left" Height="88" Margin="7,42,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </UserControl>

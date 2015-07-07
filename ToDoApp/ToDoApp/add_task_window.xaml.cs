@@ -68,12 +68,13 @@ namespace ToDoApp
 
         private void main_canvas_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show(e.GetPosition(main_canvas).ToString());
+            //MessageBox.Show(e.GetPosition(main_canvas).ToString());
+            
         }
 
         private void main_canvas_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            
         }
 
         private void main_canvas_PreviewMouseMove(object sender, MouseEventArgs e)
