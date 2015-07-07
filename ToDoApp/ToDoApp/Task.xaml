@@ -3,22 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="130" d:DesignWidth="362">
-    <Grid Height="186" VerticalAlignment="Top" Margin="0,0,-36.667,-56">
+             mc:Ignorable="d" Height="186" Width="401">
+    <Grid Height="186" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button VerticalAlignment="Top" Height="186" Background="#FF94E2FF" Margin="0,0,-22.666,0"/>
-        <Label Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="7,3,164,88" FontSize="21.333"/>
-        <StackPanel Orientation="Horizontal" Height="43" VerticalAlignment="Top" Margin="0.667,144,0,-1">
-            <Rectangle Fill="#FF0E0E81" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
-            <Rectangle Fill="#FF492B99" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
-            <Rectangle Fill="#FFBA39E0" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
-            <Rectangle Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
-            <Rectangle Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+        <Button VerticalAlignment="Top" Height="186" Background="#FF94E2FF" Click="Button_Click"/>
+        <Label Name="TaskName" Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="7,3,294,149" FontSize="21.333"/>
+        <StackPanel Name="TaskStack" Orientation="Horizontal" Height="43" VerticalAlignment="Top" Margin="1,144,0,-1">
+            <Rectangle Name="p0" Fill="#FF0E0E81" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Name="p1" Fill="#FF492B99" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Name="p2" Fill="#FFBA39E0" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Name="p3" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+            <Rectangle Name="p4" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="80"/>
         </StackPanel>
-        <Label Content="残り　2週間" RenderTransformOrigin="0.585,0.536" Margin="0,60.8,10,19.2" FontSize="20" Background="#0021AA3A" HorizontalAlignment="Right" Width="191"/>
+        <Label Content="残り　2週間" RenderTransformOrigin="0.585,0.536" Margin="0,93,10,56" FontSize="20" Background="#0021AA3A" HorizontalAlignment="Right" Width="125"/>
         <Image Source="005.jpg" HorizontalAlignment="Left" Height="88" Margin="7,42,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </UserControl>

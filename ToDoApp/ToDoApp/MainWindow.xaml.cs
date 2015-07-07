@@ -28,13 +28,25 @@ namespace ToDoApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Button button = new Button();
+            var win = new add_task_window();
 
-            //Task task = new Task();
+            win.Show();
 
-            //canvas.Children.Add(button);
+           // win.AddTask += new EventHandler(this.AddTask);
+            win.AddTask2 += new add_task_window.TaskEventHandler(this.AddTask2);
+        }
 
-           // canvas.Children.Add(task);
+        private void AddTask(object sender,System.EventArgs e)
+        {
+            Task task = new Task();
+            grid.Children.Add(task);
+        }
+
+        private void AddTask2(object sender, TaskEventArgs e)
+        {
+            Task task = new Task();
+            task.TaskName.Content = e.task.TaskName.Content;
+            grid.Children.Add(task);
         }
     }
 }

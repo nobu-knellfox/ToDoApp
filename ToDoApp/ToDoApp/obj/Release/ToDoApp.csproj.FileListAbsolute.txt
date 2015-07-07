@@ -17,3 +17,5 @@ C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDo
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.csproj.GenerateResource.Cache
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.exe
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.pdb
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.baml
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.g.cs
