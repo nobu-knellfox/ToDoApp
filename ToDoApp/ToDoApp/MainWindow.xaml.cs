@@ -21,6 +21,8 @@ namespace ToDoApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        add_task_window win;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,18 +30,12 @@ namespace ToDoApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var win = new add_task_window();
+            
+            win = new add_task_window();
 
-            win.Show();
+            win.ShowDialog();
 
-           // win.AddTask += new EventHandler(this.AddTask);
             win.AddTask2 += new add_task_window.TaskEventHandler(this.AddTask2);
-        }
-
-        private void AddTask(object sender,System.EventArgs e)
-        {
-            Task task = new Task();
-            grid.Children.Add(task);
         }
 
         private void AddTask2(object sender, TaskEventArgs e)

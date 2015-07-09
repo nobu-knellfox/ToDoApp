@@ -31,8 +31,6 @@ namespace ToDoApp
 
         public delegate void TaskEventHandler(object sender, TaskEventArgs e);
 
-        public event EventHandler AddTask;
-
         public event TaskEventHandler AddTask2;
 
         private bool is_drag = false;
@@ -48,10 +46,18 @@ namespace ToDoApp
             AddTask2(this, e);
         }
 
+        private void SetIconOnClick(MouseEventArgs e)
+        {
+            var x = e.GetPosition(main_canvas).X - miku.Width / 2;
+            var y = e.GetPosition(main_canvas).Y - miku.Height / 2;
+
+            Canvas.SetTop(miku, Math.Max(0, Math.Min(y, main_canvas.Height - miku.Height)));
+            Canvas.SetLeft(miku, Math.Max(0, Math.Min(x, main_canvas.Width - miku.Width)));
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Task task = new Task();
-
             
             task.TaskName.Content = create_task_name.Text;
             TaskEventArgs e2 = new TaskEventArgs();
@@ -60,23 +66,14 @@ namespace ToDoApp
 
             Add(e2);
 
-            //AddTask(this, EventArgs.Empty);
-
             this.Close();
-            
         }
         //http://d.hatena.ne.jp/superlightbrothers/20090517/1242553619
 
         private void main_canvas_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //MessageBox.Show(e.GetPosition(main_canvas).ToString());
-
             is_drag = true;
-            var x = e.GetPosition(main_canvas).X - miku.Width / 2;
-            var y = e.GetPosition(main_canvas).Y - miku.Height / 2;
-
-            Canvas.SetTop(miku, Math.Max(0,Math.Min(y, main_canvas.Height - miku.Height)));
-            Canvas.SetLeft(miku, Math.Max(0,Math.Min(x, main_canvas.Width - miku.Width)));
+            SetIconOnClick(e);
         }
 
         private void main_canvas_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -88,11 +85,7 @@ namespace ToDoApp
         {
             if (is_drag||e.LeftButton == MouseButtonState.Pressed)
             {
-                var x = e.GetPosition(main_canvas).X - miku.Width / 2;
-                var y = e.GetPosition(main_canvas).Y - miku.Height / 2;
-
-                Canvas.SetTop(miku, Math.Max(0, Math.Min(y, main_canvas.Height - miku.Height)));
-                Canvas.SetLeft(miku, Math.Max(0, Math.Min(x, main_canvas.Width - miku.Width)));
+                SetIconOnClick(e);
             }
         }
 
