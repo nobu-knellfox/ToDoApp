@@ -32,6 +32,7 @@ namespace ToDoApp
         public delegate void TaskEventHandler(object sender, TaskEventArgs e);
 
         public event TaskEventHandler AddTask2;
+        public event EventHandler CloseWindow;
 
         private bool is_drag = false;
 
@@ -92,6 +93,11 @@ namespace ToDoApp
         private void main_canvas_MouseLeave(object sender, MouseEventArgs e)
         {
             is_drag = false;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            CloseWindow(this, e);
         }
     }
 }

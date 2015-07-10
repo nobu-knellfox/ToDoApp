@@ -1,7 +1,8 @@
 ﻿<Window x:Class="ToDoApp.add_task_window"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="add_task_window" Height="464" Width="625">
+        Title="add_task_window" Height="464" Width="625"
+        Closing="Window_Closing">
     <Grid>
         <TextBox Name ="create_task_name" 
                  HorizontalAlignment="Left" 
