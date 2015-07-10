@@ -49,7 +49,7 @@ namespace ToDoApp
         {
             Task task = new Task();
             task.TaskName.Content = e.task.TaskName.Content;
-            grid.Children.Add(task);
+            grid.Children.Add(e.task);
         }
 
         private void AddTaskWindowClose(object sender , EventArgs e)

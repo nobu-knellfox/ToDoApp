@@ -29,13 +29,15 @@ namespace ToDoApp
     {
         private Window mw = Application.Current.MainWindow;
 
-        public delegate void TaskEventHandler(object sender, TaskEventArgs e);
+        public delegate void TaskEventHandler(object sender, TaskEventArgs e); 
 
         public event TaskEventHandler AddTask2;
         public event EventHandler CloseWindow;
 
         private bool is_drag = false;
 
+        private string[] monsters = new string[4]{"A","B","C","D"};
+        private string[] priority_stars = new string[5] { "5", "4", "3", "2", "1" };
 
         public add_task_window()
         {
@@ -64,6 +66,8 @@ namespace ToDoApp
             TaskEventArgs e2 = new TaskEventArgs();
 
             e2.task.TaskName.Content = create_task_name.Text;
+            e2.task.mass.Content = monsters[Math.Max(0,(int)(Canvas.GetLeft(miku)/(main_canvas.Width / 4)))];
+            e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 4)))];
 
             Add(e2);
 
