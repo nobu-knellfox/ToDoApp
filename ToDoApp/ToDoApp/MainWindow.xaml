@@ -2,22 +2,29 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:ToDoApp" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ToDoApp.MainWindow"
-        Title="MainWindow" Height="440.167" Width="866">
-    <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,1.667,-0.333" Width="auto" Height="auto">
-        <StackPanel Orientation="Horizontal"  Width="auto" Height="auto">
-            <Viewbox VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="0,-13,5,-0.333" Height="432">
-                <Calendar HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Foreground="#FF190000" Height="168" Background="#FFFFB7B7" Margin="0,0,0,0">
-                    <Calendar.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF24002E" Offset="0"/>
-                            <GradientStop Color="#FF120013" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Calendar.BorderBrush>
-                </Calendar>
-            </Viewbox>
-            <StackPanel  x:Name="grid" Width="auto" Background="#FF140629" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
-                <Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center" Height="71" Margin="0,0,0.333,0" Width="386"/>
-            </StackPanel>
+        Title="MainWindow" Height="489.167" Width="1154">
+    <Grid Margin="0,0,0,0" Width="auto" Height="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="386"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="407*"/>
+            <RowDefinition Height="53*"/>
+        </Grid.RowDefinitions>
+        <Viewbox  Height="auto" Width="auto" VerticalAlignment="Top" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0">
+            <Calendar Width="auto" Foreground="#FF190000" Height="auto" Background="#FFFFB7B7" Margin="0,0,0,0" VerticalAlignment="Top" Padding="0,0,0,0">
+                <Calendar.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF24002E" Offset="0"/>
+                        <GradientStop Color="#FF120013" Offset="1"/>
+                    </LinearGradientBrush>
+                </Calendar.BorderBrush>
+            </Calendar>
+        </Viewbox>
+        <StackPanel  x:Name="grid" Width="auto" Background="#FF140629" Margin="0,0,0.0,0" VerticalAlignment="Top" Grid.Column="1" Height="auto">
+            <Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center" Height="71" Margin="0,0,0.333,0" Width="auto"/>
+            <local:Task HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </StackPanel>
-    </Border>
+    </Grid>
 </Window>

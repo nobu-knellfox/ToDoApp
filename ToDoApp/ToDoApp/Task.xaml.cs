@@ -25,7 +25,7 @@ namespace ToDoApp
         public Task()
         {
             InitializeComponent();
-            num = 5;
+            num = 4;
         }
 
         private void Label_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -39,6 +39,16 @@ namespace ToDoApp
                 TaskStack.Children.RemoveAt(num);
                 num--;
             }
+        }
+
+        private void Grid_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (0 <= num)
+            {
+                TaskStack.Children.RemoveAt(num);
+                num--;
+            }
+
         }
     }
 }
