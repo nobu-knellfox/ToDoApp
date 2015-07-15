@@ -25,7 +25,7 @@ namespace ToDoApp
         public Task()
         {
             InitializeComponent();
-            num = 4;
+            num = 5;
         }
 
         private void Label_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -35,7 +35,7 @@ namespace ToDoApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (0 <= num){
+            if (0 < num){
                 TaskStack.Children.RemoveAt(num);
                 num--;
             }
