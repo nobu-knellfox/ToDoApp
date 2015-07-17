@@ -37,11 +37,13 @@ namespace ToDoApp
         private bool is_drag = false;
 
         private string[] monsters = new string[4]{"A","B","C","D"};
-        private string[] priority_stars = new string[5] { "5", "4", "3", "2", "1" };
+        private string[] life = new string[5]{"1","2","3","4","5"};
+        private string[] priority_stars = new string[3] {"3", "2", "1" };
 
         public add_task_window()
         {
             InitializeComponent();
+            Cl.BlackoutDates.AddDatesInPast();
         }
 
         protected virtual void Add(TaskEventArgs e)
@@ -66,8 +68,16 @@ namespace ToDoApp
             TaskEventArgs e2 = new TaskEventArgs();
 
             e2.task.TaskName.Content = create_task_name.Text;
-            e2.task.mass.Content = monsters[Math.Max(0,(int)(Canvas.GetLeft(miku)/(main_canvas.Width / 4)))];
-            e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 4)))];
+
+            var width_set = Math.Max(0,(int)(Canvas.GetLeft(miku)/(main_canvas.Width / 12)));
+            e2.task.mass.Content = monsters[width_set / 4];
+            e2.task.mass.Content += life[width_set % 4];
+
+            e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 3)))];
+
+            var now = Cl.SelectedDate;
+
+            e2.task.yotei.Content = now.ToString(); DateTime.Now.ToString();
 
             Add(e2);
 
@@ -102,6 +112,11 @@ namespace ToDoApp
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             CloseWindow(this, e);
+        }
+
+        private void Cl_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
