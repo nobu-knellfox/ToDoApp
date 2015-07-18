@@ -6,7 +6,7 @@
     <Grid Margin="0,0,0,0" Width="auto" Height="auto">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="386"/>
+            <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="407*"/>
@@ -22,9 +22,11 @@
                 </Calendar.BorderBrush>
             </Calendar>
         </Viewbox>
-        <StackPanel  x:Name="grid" Width="auto" Background="#FF140629" Margin="0,0,0.0,0" VerticalAlignment="Top" Grid.Column="1" Height="auto">
-            <Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center" Height="71" Margin="0,0,0.333,0" Width="auto"/>
-            <local:Task HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        </StackPanel>
+        <ScrollViewer HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="400" Margin="747,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <StackPanel  x:Name="grid" Width="386" Background="#FF140629" Margin="0,0,0.0,0" VerticalAlignment="Top" Height="auto">
+                <Button Content="タスク追加" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="Black" Background="#FF5929A4" HorizontalContentAlignment="Center" Height="71" Margin="0,0,0.333,0" Width="auto"/>
+                <local:Task HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

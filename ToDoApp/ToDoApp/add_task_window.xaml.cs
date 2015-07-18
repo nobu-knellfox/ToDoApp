@@ -75,11 +75,20 @@ namespace ToDoApp
 
             e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 3)))];
 
-            DateTime now = (DateTime)Cl.SelectedDate;
 
-            var d = now - DateTime.Now;
+            string content = "";
+            if (Cl.SelectedDate == null)
+            {
+                content = "未設定";
+            }
+            else
+            {
+                DateTime now = (DateTime)Cl.SelectedDate;
+                var d = now - DateTime.Now;
+                content = d.Days.ToString() + "日";
+            }
 
-            e2.task.yotei.Content = d.Days.ToString() + "日";
+            e2.task.yotei.Content = content;
 
             Add(e2);
 
