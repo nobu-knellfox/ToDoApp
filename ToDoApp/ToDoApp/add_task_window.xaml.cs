@@ -75,9 +75,11 @@ namespace ToDoApp
 
             e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 3)))];
 
-            var now = Cl.SelectedDate;
+            DateTime now = (DateTime)Cl.SelectedDate;
 
-            e2.task.yotei.Content = now.ToString(); DateTime.Now.ToString();
+            var d = now - DateTime.Now;
+
+            e2.task.yotei.Content = d.Days.ToString() + "日";
 
             Add(e2);
 
@@ -112,11 +114,6 @@ namespace ToDoApp
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             CloseWindow(this, e);
-        }
-
-        private void Cl_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

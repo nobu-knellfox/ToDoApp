@@ -37,7 +37,7 @@
         <Button Content="add" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Width="259" Click="Button_Click" Height="32"/>
         <Label Name="lavel" FontSize="23" Content="タスク名:" HorizontalAlignment="Left" Margin="23,24,0,0" VerticalAlignment="Top" Height="39" Width="115"/>
         <Viewbox  HorizontalAlignment="Left" Height="188" Margin="10,88,0,0" VerticalAlignment="Top" Width="259">
-            <Calendar x:Name="Cl" SelectedDatesChanged="Cl_SelectedDatesChanged" IsTodayHighlighted="True" SelectionMode="MultipleRange" HorizontalAlignment="Left" VerticalAlignment="Top" Height="auto" Width="auto"/>
+            <Calendar x:Name="Cl" IsTodayHighlighted="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="auto" Width="auto"/>
         </Viewbox>
 
     </Grid>

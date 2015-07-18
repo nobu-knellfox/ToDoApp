@@ -19,7 +19,7 @@
             <Rectangle x:Name="p3" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="76"/>
             <Rectangle x:Name="p4" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
         </StackPanel>
-        <Label x:Name="yotei" Content="2週間"  FontSize="20" Background="#0021AA3A" Margin="315,43,1.667,43"/>
+        <Label x:Name="yotei" Content="2週間"  FontSize="20" Background="#0021AA3A" Margin="273,43,10,43"/>
         <Image Source="img\005.jpg" HorizontalAlignment="Left" Height="53" Margin="0,22,0,0" VerticalAlignment="Top" Width="83"/>
         <Label x:Name="priority" Content="priority" Margin="83,48,71.667,43"/>
         <Label x:Name="mass" Margin="219,0,-25.333,92" Content="mass"/>
