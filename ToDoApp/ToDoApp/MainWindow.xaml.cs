@@ -29,12 +29,7 @@ namespace ToDoApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = new Button();
-
-            //Task task = new Task();
-
-            //canvas.Children.Add(button);
-
-           // canvas.Children.Add(task);
+            
         }
     }
 }
