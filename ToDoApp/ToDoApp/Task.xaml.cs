@@ -21,6 +21,8 @@ namespace ToDoApp
     public partial class Task : UserControl
     {
         private int num;
+        private Window win = Application.Current.MainWindow;
+        public event ToDoApp.add_task_window.TaskEventHandler del;
 
         public Task()
         {
@@ -39,6 +41,12 @@ namespace ToDoApp
                 TaskStack.Children.RemoveAt(num);
                 num--;
             }
+            else{
+                TaskEventArgs ee = new TaskEventArgs();
+                ee.task = this;
+                del(this, ee);
+            }
+
         }
 
         private void Grid_PreviewMouseDown(object sender, MouseButtonEventArgs e)
@@ -47,6 +55,12 @@ namespace ToDoApp
             {
                 TaskStack.Children.RemoveAt(num);
                 num--;
+            }
+            else
+            {
+                TaskEventArgs ee = new TaskEventArgs();
+                ee.task = this;
+                del(this, ee);
             }
 
         }
