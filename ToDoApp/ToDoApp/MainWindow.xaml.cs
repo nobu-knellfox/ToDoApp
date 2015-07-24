@@ -48,17 +48,17 @@ namespace ToDoApp
         private void AddTask2(object sender, TaskEventArgs e)
         {
             Task task = new Task();
-            task.del += new ToDoApp.add_task_window.TaskEventHandler(this.DeleteTask);
+            //task.del += new ToDoApp.add_task_window.TaskEventHandler(this.DeleteTask);
             task.TaskName.Content = e.task.TaskName.Content;
             grid.Children.Add(e.task);
         }
 
-        private void DeleteTask(object sender,TaskEventArgs e)
+        public void DeleteTask(Task t)
         {
-           e.task = null;
+            grid.Children.Remove(t);
         }
 
-        private void AddTaskWindowClose(object sender , EventArgs e)
+        private void AddTaskWindowClose(object sender,EventArgs e)
         {
             is_add_task_open = false;
         }
