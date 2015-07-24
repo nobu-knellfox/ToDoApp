@@ -21,6 +21,8 @@ namespace ToDoApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool is_add_task_open = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,6 +32,38 @@ namespace ToDoApp
         {
             Button button = new Button();
             
+            if (is_add_task_open)
+            {
+                MessageBox.Show("TaskWindowが開かれています");
+                return;
+            }
+
+            is_add_task_open = true;
+
+            var win = new add_task_window();
+            win.Show();
+
+            win.AddTask2 += new add_task_window.TaskEventHandler(this.AddTask2);
+            win.CloseWindow += new EventHandler(this.AddTaskWindowClose);
         }
+
+        private void AddTask2(object sender, TaskEventArgs e)
+        {
+            Task task = new Task();
+            //task.del += new ToDoApp.add_task_window.TaskEventHandler(this.DeleteTask);
+            task.TaskName.Content = e.task.TaskName.Content;
+            grid.Children.Add(e.task);
+        }
+
+        public void DeleteTask(Task t)
+        {
+            grid.Children.Remove(t);
+        }
+
+        private void AddTaskWindowClose(object sender,EventArgs e)
+        {
+            is_add_task_open = false;
+        }
+
     }
 }

@@ -3,10 +3,8 @@ C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\bin\Release\ToDo
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\bin\Release\ToDoApp.pdb
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.csprojResolveAssemblyReference.cache
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\Task.baml
-C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\Test3.baml
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\MainWindow.g.cs
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\Task.g.cs
-C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\Test3.g.cs
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\App.g.cs
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp_MarkupCompile.cache
@@ -17,3 +15,5 @@ C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDo
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.csproj.GenerateResource.Cache
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.exe
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.pdb
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.baml
+C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.g.cs

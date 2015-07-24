@@ -20,14 +20,27 @@ namespace ToDoApp
     /// </summary>
     public partial class Task : UserControl
     {
+        private int num;
+        private MainWindow win = (MainWindow)Application.Current.MainWindow;
+        public event ToDoApp.add_task_window.TaskEventHandler del;
+
         public Task()
         {
             InitializeComponent();
+            num = 4;
         }
 
-        private void Label_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void Grid_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            if (0 <= num)
+            {
+                TaskStack.Children.RemoveAt(num);
+                num--;
+            }
+            else
+            {
+                win.DeleteTask(this);
+            }
         }
     }
 }

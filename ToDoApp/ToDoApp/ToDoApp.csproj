@@ -54,12 +54,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="add_task_window.xaml.cs">
+      <DependentUpon>add_task_window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Task.xaml.cs">
       <DependentUpon>Task.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test3.xaml.cs">
-      <DependentUpon>Test3.xaml</DependentUpon>
-    </Compile>
+    <Page Include="add_task_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,10 +77,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Task.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,8 +112,13 @@
     <Folder Include="Fonts\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="005.jpg" />
     <Resource Include="archive_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\miku.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\.NETFramework\v4.5\Microsoft.Expression.Blend.WPF.targets" />
