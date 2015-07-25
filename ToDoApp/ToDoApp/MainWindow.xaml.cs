@@ -41,6 +41,8 @@ namespace ToDoApp
             is_add_task_open = true;
 
             var win = new add_task_window();
+            win.Left = this.Left + (this.Width - win.Width) / 2;
+            win.Top = this.Top + (this.Height - win.Height) / 2;
             win.Show();
 
             win.AddTask2 += new add_task_window.TaskEventHandler(this.AddTask2);
