@@ -1,0 +1,14 @@
+diff a/ToDoApp/ToDoApp/MainWindow.xaml b/ToDoApp/ToDoApp/MainWindow.xaml	(rejected hunks)
+@@ -1,9 +0,10 @@
+-ï»¿<Window
++ï»¿<metro:Window
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
++        xmlns:metro="http://schemas.codeplex.com/elysium"
+         xmlns:local="clr-namespace:ToDoApp" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" mc:Ignorable="d" x:Class="ToDoApp.MainWindow"
+         Title="MainWindow" Height="489.167" Width="1154">
+-	<Window.Resources>
++	<metro:Window.Resources>
+ 		<Style x:Key="CalendarStyle1" TargetType="{x:Type Calendar}">
+ 			<Setter Property="Foreground" Value="#FF333333"/>
+ 			<Setter Property="Background">

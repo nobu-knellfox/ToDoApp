@@ -4,6 +4,7 @@
         xmlns:local="clr-namespace:ToDoApp" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" mc:Ignorable="d" x:Class="ToDoApp.MainWindow"
         Title="MainWindow" Height="489.167" Width="1154">
 	<Window.Resources>
+		<!--CalenderStyle-->
 		<Style x:Key="CalendarStyle1" TargetType="{x:Type Calendar}">
 			<Setter Property="Foreground" Value="#FF333333"/>
 			<Setter Property="Background">
@@ -37,7 +38,10 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
 		<Color x:Key="VividOrange">#FFFF6953</Color>
+
+		<!--CAlenderDayButton-->
 		<Style x:Key="CalendarDayButtonStyle1" TargetType="{x:Type CalendarDayButton}">
 			<Setter Property="MinWidth" Value="5"/>
 			<Setter Property="MinHeight" Value="5"/>
@@ -156,6 +160,8 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		<!--CalenderItem-->
 		<Style x:Key="CalendarItemStyle1" TargetType="{x:Type CalendarItem}">
 			<Setter Property="Margin" Value="0,3,0,3"/>
 			<Setter Property="Template">
@@ -319,6 +325,8 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		<!--CalenderButton-->
 		<Style x:Key="CalendarButtonStyle1" TargetType="{x:Type CalendarButton}">
 			<Setter Property="Background" Value="#FFBADDE9"/>
 			<Setter Property="MinWidth" Value="40"/>
@@ -411,6 +419,8 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		<!--ControlStyle-->
 		<Style x:Key="ControlStyle1" TargetType="{x:Type Control}">
 			<Setter Property="Template">
 				<Setter.Value>
@@ -420,6 +430,8 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		<!--Grid-->
 		<Style x:Key="GridStyle1" TargetType="{x:Type Grid}">
 			<Setter Property="Grid.RowSpan" Value="1"/>
 			<Setter Property="Focusable" Value="False"/>
@@ -434,6 +446,8 @@
 		<DataTemplate x:Key="DataTemplate2">
 			<Grid/>
 		</DataTemplate>
+
+		<!--ButtonControl-->
 		<ControlTemplate x:Key="ButtonControlTemplate1" TargetType="{x:Type Button}">
 			<Grid Cursor="Hand">
 				<VisualStateManager.VisualStateGroups>
@@ -492,6 +506,8 @@
 				</Grid>
 			</Grid>
 		</ControlTemplate>
+
+		<!--ContentPresenter-->
 		<Style x:Key="ContentPresenterStyle1" TargetType="{x:Type ContentPresenter}">
 			<Setter Property="OpacityMask" Value="{x:Null}"/>
 		</Style>
@@ -512,22 +528,27 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
-		<LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
-			<GradientStop Color="#F3F3F3" Offset="0"/>
+
+
+		<LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,0" StartPoint="0,0">
+			<GradientStop Color="#EBEBEB" Offset="0"/>
 			<GradientStop Color="#EBEBEB" Offset="0.5"/>
 			<GradientStop Color="#DDDDDD" Offset="0.5"/>
 			<GradientStop Color="#CDCDCD" Offset="1"/>
 		</LinearGradientBrush>
-		<SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>
+		
+		<SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF171414"/>
+
+		<!--Button-->
 		<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
 			<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
 			<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
 			<Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
-			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderThickness" Value="0"/>
 			<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
 			<Setter Property="HorizontalContentAlignment" Value="Center"/>
 			<Setter Property="VerticalContentAlignment" Value="Center"/>
-			<Setter Property="Padding" Value="1"/>
+			<Setter Property="Padding" Value="0"/>
 			<Setter Property="Template">
 				<Setter.Value>
 					<ControlTemplate TargetType="{x:Type Button}">
@@ -549,6 +570,8 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		<!--ScrollViewer-->
 		<ControlTemplate x:Key="ScrollViewerControlTemplate1" TargetType="{x:Type ScrollViewer}">
 			<Grid x:Name="Grid" Background="{TemplateBinding Background}">
 				<Grid.ColumnDefinitions>
@@ -575,7 +598,18 @@
 			</Grid>
 		</ControlTemplate>
 		<Style x:Key="ButtonChromeStyle1" TargetType="{x:Type Themes:ButtonChrome}"/>
+
+
+	<ControlTemplate x:Key="ButtonTemplate"  TargetType="Button">
+      <Border Background="LightGreen" CornerRadius="30" Padding="10">
+        <TextBlock Text="テンプレート"
+          VerticalAlignment="Center" HorizontalAlignment="Center"/>
+      </Border>
+    </ControlTemplate>
+
 	</Window.Resources>
+
+	<!--Grid-->
 	<Grid Margin="0,0,0,0" Width="auto" Height="auto" Background="#FF171414">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="1*"/>
@@ -591,6 +625,6 @@
 		<ScrollViewer HorizontalAlignment="Left" Width="399" Margin="1,71,0,0" Grid.RowSpan="2" Background="#FF080707" BorderThickness="0" BorderBrush="Red" Foreground="Black" Template="{DynamicResource ScrollViewerControlTemplate1}" Grid.Column="1">
 			<StackPanel  x:Name="grid" Width="372" Margin="0,0,0.0,0" VerticalAlignment="Top" Background="#FF040404" HorizontalAlignment="Right" Height="3"/>
 		</ScrollViewer>
-		<Button Content="タスクを追加" x:Name="button" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="53,10,10,10" BorderBrush="White" Background="#FF171414" HorizontalContentAlignment="Center" Margin="1,0,0,335.263" Width="auto" Style="{DynamicResource ButtonStyle1}" Grid.Column="1"/>
+		<Button Content="タスクを追加" x:Name="button" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" Margin="1,0,0,335.263" Width="auto" Style="{DynamicResource ButtonStyle1}" Grid.Column="1" Background="#FFC70000"/>
 	</Grid>
 </Window>
