@@ -599,11 +599,12 @@
 		</ControlTemplate>
 		<Style x:Key="ButtonChromeStyle1" TargetType="{x:Type Themes:ButtonChrome}"/>
 
-
+	<!--Button-->
 	<ControlTemplate x:Key="ButtonTemplate"  TargetType="Button">
-      <Border Background="LightGreen" CornerRadius="30" Padding="10">
-        <TextBlock Text="テンプレート"
-          VerticalAlignment="Center" HorizontalAlignment="Center"/>
+      <Border Background="{TemplateBinding Background}"  
+		Width="{TemplateBinding Width}" Height="{TemplateBinding Width}">
+        <TextBlock Text="{TemplateBinding Content}"
+          VerticalAlignment="Top" HorizontalAlignment="Center"/>
       </Border>
     </ControlTemplate>
 
@@ -619,12 +620,12 @@
 			<RowDefinition Height="407*"/>
 			<RowDefinition Height="53*"/>
 		</Grid.RowDefinitions>
-		<Viewbox  Height="auto" Width="auto" VerticalAlignment="Top" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0" OpacityMask="Black">
+		<Viewbox  Height="406.263" Width="auto" VerticalAlignment="Top" Margin="316,0,0,0" Grid.Row="0" Grid.Column="0" OpacityMask="Black">
 			<Calendar Width="auto" Height="auto" Background="Black" Margin="0,0,0,0" VerticalAlignment="Top" Padding="0,0,0,0" BorderBrush="{x:Null}" BorderThickness="0" Foreground="#FFFFAFAF" Style="{DynamicResource CalendarStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" FocusVisualStyle="{DynamicResource ControlStyle1}"/>
 		</Viewbox>
-		<ScrollViewer HorizontalAlignment="Left" Width="399" Margin="1,71,0,0" Grid.RowSpan="2" Background="#FF080707" BorderThickness="0" BorderBrush="Red" Foreground="Black" Template="{DynamicResource ScrollViewerControlTemplate1}" Grid.Column="1">
-			<StackPanel  x:Name="grid" Width="372" Margin="0,0,0.0,0" VerticalAlignment="Top" Background="#FF040404" HorizontalAlignment="Right" Height="3"/>
+		<ScrollViewer HorizontalAlignment="Left" Width="399" Margin="1,7.174,0,0" Grid.RowSpan="2" Background="#FF080707" BorderThickness="0" BorderBrush="Red" Foreground="Black" Template="{DynamicResource ScrollViewerControlTemplate1}" Grid.Column="1">
+			<StackPanel  x:Name="grid" Width="382" Margin="0,0,0.0,0" VerticalAlignment="Top" Background="#FF040404" HorizontalAlignment="Right"/>
 		</ScrollViewer>
-		<Button Content="タスクを追加" x:Name="button" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" Margin="1,0,0,335.263" Width="auto" Style="{DynamicResource ButtonStyle1}" Grid.Column="1" Background="#FFC70000"/>
+		<Button Content="タスクを追加" x:Name="button" Click="Button_Click" Foreground="White" FontSize="24" BorderThickness="0" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" Margin="0,0,502,194.93" Template="{StaticResource ButtonTemplate}" Background="#FFC70000"/>
 	</Grid>
 </Window>
