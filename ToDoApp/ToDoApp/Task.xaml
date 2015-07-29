@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
         <Label x:Name="TaskName" Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="83,0,1.667,75" FontSize="27.333"/>
         <StackPanel x:Name="TaskStack" Orientation="Horizontal" Height="43" VerticalAlignment="Top" Margin="0,75,1.667,0">
             <Rectangle x:Name="p0" Fill="#FF0E0E81" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
@@ -20,7 +21,7 @@
             <Rectangle x:Name="p4" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
         </StackPanel>
         <Label x:Name="yotei" Content="2週間"  FontSize="20" Background="#0021AA3A" Margin="273,43,10,43"/>
-        <Image Source="img\005.jpg" HorizontalAlignment="Left" Height="53" Margin="0,22,0,0" VerticalAlignment="Top" Width="83"/>
+        <Image Name="img" Source="img\005.jpg" HorizontalAlignment="Left" Height="53" Margin="0,22,0,0" VerticalAlignment="Top" Width="83"/>
         <Label x:Name="priority" Content="priority" Margin="83,48,71.667,43"/>
         <Label x:Name="mass" Margin="219,0,-25.333,92" Content="mass"/>
     </Grid>

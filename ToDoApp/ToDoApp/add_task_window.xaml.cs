@@ -72,7 +72,7 @@ namespace ToDoApp
             var width_set = Math.Max(0,(int)(Canvas.GetLeft(miku)/(main_canvas.Width / 12)));
             e2.task.mass.Content = monsters[width_set / 4];
             e2.task.mass.Content += life[width_set % 4];
-
+            e2.task.ChangeNum(width_set);
             e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 3)))];
 
 
@@ -85,7 +85,7 @@ namespace ToDoApp
             {
                 DateTime now = (DateTime)Cl.SelectedDate;
                 var d = now - DateTime.Now;
-                content = d.Days.ToString() + "日";
+                content = (d.Days + 1).ToString() + "日";
             }
 
             e2.task.yotei.Content = content;
@@ -94,7 +94,6 @@ namespace ToDoApp
 
             this.Close();
         }
-        //http://d.hatena.ne.jp/superlightbrothers/20090517/1242553619
 
         private void main_canvas_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
