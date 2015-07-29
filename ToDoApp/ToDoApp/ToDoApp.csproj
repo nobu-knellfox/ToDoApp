@@ -114,6 +114,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="archive_frame.png" />
+    <Resource Include="img\add_task.png" />
+    <Resource Include="img\setting.png" />
     <Resource Include="status_under2.png" />
     <Resource Include="TextInput_Images\角丸長方形 1.png" />
   </ItemGroup>
