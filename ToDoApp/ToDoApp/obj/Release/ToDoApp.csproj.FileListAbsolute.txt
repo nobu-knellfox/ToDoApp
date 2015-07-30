@@ -17,3 +17,21 @@ C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDo
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.pdb
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.baml
 C:\Users\nobu\Documents\リポジトリ\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.g.cs
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\bin\Release\ToDoApp.exe.config
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\bin\Release\ToDoApp.exe
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\bin\Release\ToDoApp.pdb
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.csprojResolveAssemblyReference.cache
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.baml
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\Task.baml
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\add_task_window.g.cs
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\MainWindow.g.cs
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\Task.g.cs
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\App.g.cs
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp_MarkupCompile.cache
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp_MarkupCompile.lref
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\MainWindow.baml
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.g.resources
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.Properties.Resources.resources
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.csproj.GenerateResource.Cache
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.exe
+D:\User\Development\Visual Stadio 2013\Projects\ToDoApp\ToDoApp\ToDoApp\obj\Release\ToDoApp.pdb
