@@ -624,13 +624,13 @@
             <Calendar Width="auto" Height="auto" Background="Black" Margin="0,0,0,0" VerticalAlignment="Top" Padding="0,0,0,0" BorderBrush="{x:Null}" BorderThickness="0" Foreground="#FFFFAFAF" Style="{DynamicResource CalendarStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" FocusVisualStyle="{DynamicResource ControlStyle1}"/>
         </Viewbox>
         <ScrollViewer HorizontalAlignment="Left" Width="399" Margin="0.667,7,0,0" Background="#FF080707" BorderThickness="0" BorderBrush="Red" Foreground="Black" Template="{DynamicResource ScrollViewerControlTemplate1}" Grid.Column="1">
-            <StackPanel Name="grid" Height="100" Width="auto" VerticalAlignment="Top"/>
+        	<StackPanel Name="grid" Height="auto" Width="auto"/>
         </ScrollViewer>
         <StackPanel HorizontalAlignment="Left" Height="322.5" Margin="10,7,0,0" VerticalAlignment="Top" Width="245">
         	<Button Width="auto" Height="130" x:Name="button" Click="Button_Click" HorizontalContentAlignment="Center" Margin="0,0,-0.667,0" Template="{StaticResource ButtonTemplate}" Background="#FFC70000">
         		<Image Source="img\add_task.png" VerticalAlignment="Bottom" Height="153" Width="150"/>
         	</Button>
-        	<Button Width="253.666" Template="{StaticResource ButtonTemplate}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Aqua" Margin="0,11,0,0" Height="130" >
+        	<Button Visibility="Hidden" Width="253.666" Template="{StaticResource ButtonTemplate}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Aqua" Margin="0,11,0,0" Height="130" >
         		<Image Source="img\setting.png" Height="153" Width="150" Margin="0,-29,8,0"/>
         	</Button>
         </StackPanel>

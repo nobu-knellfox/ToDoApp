@@ -38,7 +38,7 @@ namespace ToDoApp
 
         private string[] monsters = new string[4]{"A","B","C","D"};
         private string[] life = new string[5]{"1","2","3","4","5"};
-        private string[] priority_stars = new string[3] {"3", "2", "1" };
+        private string[] priority_stars = new string[3] {"★★★", "★★", "★" };
 
         public add_task_window()
         {
@@ -68,18 +68,21 @@ namespace ToDoApp
             TaskEventArgs e2 = new TaskEventArgs();
 
             e2.task.TaskName.Content = create_task_name.Text;
+			var miku_left = Canvas.GetLeft(miku) + miku.Width / 2;
+			var miku_top = Canvas.GetTop(miku) + miku.Height / 2;
 
-            var width_set = Math.Max(0,(int)(Canvas.GetLeft(miku)/(main_canvas.Width / 12)));
-            e2.task.mass.Content = monsters[width_set / 4];
-            e2.task.mass.Content += life[width_set % 4];
+            var width_set = Math.Max(0,(int)(miku_left/(main_canvas.Width / 12)));
             e2.task.ChangeNum(width_set);
-            e2.task.priority.Content = priority_stars[Math.Max(0,(int)(Canvas.GetTop(miku) / (main_canvas.Height / 3)))];
+
+
+            e2.task.priority.Content = priority_stars[Math.Max(0,(int)(miku_top / (main_canvas.Height / 3)))];
 
 
             string content = "";
             if (Cl.SelectedDate == null)
             {
-                content = "未設定";
+				//カレンダー未設定
+                content = "";
             }
             else
             {
@@ -89,6 +92,7 @@ namespace ToDoApp
             }
 
             e2.task.yotei.Content = content;
+			e2.task.Margin = new Thickness(0,1,0,1);
 
             Add(e2);
 

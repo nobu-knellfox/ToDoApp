@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Height="118" Width="386">
-    <Grid Height="118" VerticalAlignment="Top" Margin="0,0,-0.333,0" Background="#FF94E2FF" PreviewMouseDown="Grid_PreviewMouseDown">
+    <Grid Name="main" Height="118" VerticalAlignment="Top" Margin="0,0,-0.333,0" Background="#FF780D83" PreviewMouseDown="Grid_PreviewMouseDown">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -12,17 +12,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <Label x:Name="TaskName" Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="83,0,1.667,75" FontSize="27.333"/>
-        <StackPanel x:Name="TaskStack" Orientation="Horizontal" Height="43" VerticalAlignment="Top" Margin="0,75,1.667,0">
-            <Rectangle x:Name="p0" Fill="#FF0E0E81" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
-            <Rectangle x:Name="p1" Fill="#FF492B99" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
-            <Rectangle x:Name="p2" Fill="#FFBA39E0" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
-            <Rectangle x:Name="p3" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-            <Rectangle x:Name="p4" Fill="#FFFF23EB" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="77"/>
-        </StackPanel>
-        <Label x:Name="yotei" Content="2週間"  FontSize="20" Background="#0021AA3A" Margin="273,43,10,43"/>
-        <Image Name="img" Source="img\005.jpg" HorizontalAlignment="Left" Height="53" Margin="0,22,0,0" VerticalAlignment="Top" Width="83"/>
-        <Label x:Name="priority" Content="priority" Margin="83,48,71.667,43"/>
-        <Label x:Name="mass" Margin="219,0,-25.333,92" Content="mass"/>
+        <Label x:Name="TaskName" Content="タスク名" RenderTransformOrigin="0.585,0.536" Margin="83,0,1.667,75" FontSize="27.333" Foreground="White"/>
+        <StackPanel x:Name="TaskStack" Orientation="Horizontal" Height="22" VerticalAlignment="Top" Margin="0,95.667,1.667,0"/>
+        <Label x:Name="yotei" Content="2週間"  FontSize="29.333" Background="#0021AA3A" Margin="260,31,-33,38" Foreground="#FFC5E5FF"/>
+        <Image Name="img" Source="img\005.jpg" HorizontalAlignment="Left" Height="65" Margin="0,10,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label x:Name="priority" Content="★" Margin="87,38.76,113.333,39.74" FontSize="24" Foreground="#FFFFF195"/>
     </Grid>
 </UserControl>
