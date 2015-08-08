@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
+    <Folder Include="Template\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\add_task.png" />
